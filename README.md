@@ -11,7 +11,8 @@
 > - regras de negócio reais de cobrança
 
 Qualquer uso em ambiente real deve passar por revisão técnica, de segurança e de negócio, seguindo as melhores práticas e a documentação oficial do Bling.
-
+- Documentação: https://developer.bling.com.br/home
+  
 - Buscar **contatos**, **formas de pagamento** e **categorias de receitas**
 - Criar uma **conta a receber** (base para boleto)
 - Fazer **download do PDF** do boleto gerado
@@ -193,8 +194,6 @@ conta := ContaReceber{
     },
 }
 ```
-- Documentação: https://developer.bling.com.br/home
-
 Você deve:
 
 - Ajustar os **IDs** usando as respostas de:
@@ -230,5 +229,5 @@ Aqui foi explorado só um recorte bem específico do módulo financeiro (contas 
 - consumo de endpoints REST na prática
 
 Toda a inteligência de negócio, robustez, regras fiscais e recursos avançados estão no lado do **Bling**, que é claramente uma solução de ERP completa e muito bem pensada para quem precisa escalar gestão e automação.
-
+https://www.bling.com.br/
 
