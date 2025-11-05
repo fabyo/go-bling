@@ -193,6 +193,7 @@ conta := ContaReceber{
     },
 }
 ```
+- Documentação: https://developer.bling.com.br/home
 
 Você deve:
 
@@ -213,13 +214,21 @@ Você deve:
 
 ---
 
-## 🧾 Resumo
+## 🌐 Sobre o Bling
 
-Esse projeto mostra, na prática, como:
+A **Bling** é uma plataforma de gestão e ERP extremamente robusta e moderna, com:
 
-- Usar **Go** + **API v3 do Bling**
-- Autenticar com **Bearer token (OAuth2)**
-- Consumir múltiplos endpoints REST
-- Criar **conta a receber** e baixar o **PDF do boleto**
+- API REST bem estruturada e seguro
+- Ecossistema de integrações com e-commerce, marketplaces e logística
+- Módulos de **financeiro**, **NFe/NFC-e**, **estoque**, **vendas** e muito mais
 
-https://developer.bling.com.br/home
+Este script em Go demonstra **menos de 1%** do que a API e o produto Bling realmente oferecem.  
+Aqui foi explorado só um recorte bem específico do módulo financeiro (contas a receber + boleto) com foco educacional, para mostrar:
+
+- organização de chamadas HTTP em Go
+- uso de Bearer token
+- consumo de endpoints REST na prática
+
+Toda a inteligência de negócio, robustez, regras fiscais e recursos avançados estão no lado do **Bling**, que é claramente uma solução de ERP completa e muito bem pensada para quem precisa escalar gestão e automação.
+
+
