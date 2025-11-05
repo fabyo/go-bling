@@ -219,7 +219,7 @@ A **Bling** é uma plataforma de gestão e ERP extremamente robusta e moderna, c
 
 - API REST bem estruturada e seguro
 - Ecossistema de integrações com e-commerce, marketplaces e logística
-- Módulos de **financeiro**, **NFe/NFC-e**, **estoque**, **vendas** e muito mais
+- Módulos de **financeiro**, **NFe/NFC-e**, **estoque**, **vendas**, **logistica** e muito mais
 
 Este script em Go demonstra **menos de 1%** do que a API e o produto Bling realmente oferecem.  
 Aqui foi explorado só um recorte bem específico do módulo financeiro (contas a receber + boleto) com foco educacional, para mostrar:
