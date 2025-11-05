@@ -112,7 +112,7 @@ No projeto, você **não** deixa o token hardcoded: use variável de ambiente.
 Clone o repositório:
 
 ```bash
-git clone https://github.com/SEU_USUARIO/go-bling-boleto.git
+git clone https://github.com/fabyo/go-bling-boleto.git
 cd go-bling-boleto
 ```
 
