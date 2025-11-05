@@ -8,7 +8,7 @@ Projeto em Go que integra com a **API v3 do Bling** para:
 - Criar uma **conta a receber** (base para boleto)
 - Fazer **download do PDF** do boleto gerado
 
-Tudo usando **OAuth2 (Bearer token)** da API v3, sem `apikey` velha da v2.
+Tudo usando **OAuth2 (Bearer token)** da API v3
 
 ---
 
