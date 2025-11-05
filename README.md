@@ -1,5 +1,7 @@
 # Go + Bling API v3 – Geração de Boleto (Conta a Receber + PDF)
 
+<img src="go-bling.png" alt="Golang" width="200" />
+
 Projeto em Go que integra com a **API v3 do Bling** para:
 
 - Buscar **contatos**, **formas de pagamento** e **categorias de receitas**
