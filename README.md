@@ -214,7 +214,7 @@ Você deve:
 
 ---
 
-## <img src="Logo.svg" alt="Gopher Webhook" width="40" style="vertical-align: middle; margin-right: 6px;" /> Sobre o Bling
+## <img src="Logo.svg" alt="Gopher Webhook" width="30" style="vertical-align: middle;" /> Sobre o Bling
 
 A **Bling** é uma plataforma de gestão e ERP extremamente robusta e moderna, com:
 
