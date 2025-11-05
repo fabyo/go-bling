@@ -89,7 +89,7 @@ No `main()` o fluxo é:
 ## ✅ Pré-requisitos
 
 - Go **1.20+** (recomendado)
-- Conta no **Bling** com acesso à **API v3**
+- Conta no **Bling** com acesso à **API v3** e uma conta PJ
 - Um **Aplicativo** criado no painel do Bling (OAuth2)
 - Um **access token** v3 válido (tipo *Bearer*)
 
