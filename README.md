@@ -1,8 +1,16 @@
-# Go + Bling API v3 – Geração de Boleto (Conta a Receber + PDF)
+# Go + Bling API v3 – Demonstração de Integração (Conta a Receber + Boleto)
 
 <img src="go-bling.png" alt="Golang" width="200" />
 
-Projeto em Go que integra com a **API v3 do Bling** para:
+> ⚠️ **IMPORTANTE:**  
+> Este repositório é **apenas uma demonstração técnica** de integração com a **API v3 do Bling** usando Go.  
+> Não foi projetado nem revisado para uso em produção. Não contempla:
+> - tratamentos completos de erro
+> - segurança avançada
+> - fluxo de autenticação automatizado
+> - regras de negócio reais de cobrança
+
+Qualquer uso em ambiente real deve passar por revisão técnica, de segurança e de negócio, seguindo as melhores práticas e a documentação oficial do Bling.
 
 - Buscar **contatos**, **formas de pagamento** e **categorias de receitas**
 - Criar uma **conta a receber** (base para boleto)
@@ -174,14 +182,14 @@ conta := ContaReceber{
     NumeroParcela:  1,
     TotalParcelas:  1,
     Contato: Contato{
-        ID:   17751459653,  // ✅ ID real do contato no seu Bling
+        ID:   0000000000,
         Nome: "Fabyo Guimaraes",
     },
     Categoria: Categoria{
-        ID: 8422839,        // ✅ ID real da categoria de receita
+        ID: 12345678,
     },
     FormaPagamento: FormaPagamento{
-        ID: 8422840,        // ✅ ID real da forma de pagamento (boleto)
+        ID: 1234530,
     },
 }
 ```
@@ -196,38 +204,12 @@ Você deve:
 
 ---
 
-## 📎 Sobre o download do PDF
-
-A função `DownloadBoletoPDF`:
-
-- Chama: `GET /contas/receber/{id}/pdf`
-- Usa `Accept: application/pdf`
-- Valida se o retorno começa com `%PDF`
-- Salva o conteúdo em um arquivo `.pdf`
-
-O código faz duas tentativas com delay porque às vezes o Bling ainda está processando o boleto logo após a criação da conta.
-
----
-
 ## ⚠️ Cuidados importantes
 
 - **NUNCA** commite seu `access_token` no Git
 - Use sempre `BLING_TOKEN` via variável de ambiente
 - IDs de contato/categoria/forma de pagamento do exemplo são **seus**, não vão existir em outra conta
   - para alguém usar esse projeto, terá que trocar esses IDs pelos próprios
-
----
-
-## 💡 Ideias de evolução
-
-- Transformar esse `main.go` em:
-  - um **CLI** (`cobra` / flags) que gera boleto com parâmetros
-  - uma **API HTTP** em Go (`/meu-sistema/boletos`) que recebe JSON e gera o boleto no Bling
-- Tipar as respostas de:
-  - `/contatos`
-  - `/formas-pagamentos`
-  - `/categorias/receitas`
-- Adicionar logs estruturados (JSON) para rodar em produção
 
 ---
 
@@ -240,4 +222,4 @@ Esse projeto mostra, na prática, como:
 - Consumir múltiplos endpoints REST
 - Criar **conta a receber** e baixar o **PDF do boleto**
 
-Perfeito para colocar em portfólio como exemplo de integração com ERP em Go.
+https://developer.bling.com.br/home
