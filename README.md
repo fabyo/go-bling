@@ -214,7 +214,7 @@ Você deve:
 
 ---
 
-<img src="Logo.svg" alt="Gopher Webhook" width="70" />
+<img src="Logo.svg" alt="Gopher Webhook" width="50" />
 
 ## 🌐 Sobre o Bling
 
